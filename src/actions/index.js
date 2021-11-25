@@ -10,6 +10,13 @@ export const heroesFetched = (heroes) => {
         payload: heroes
     }
 }
+export const heroesFetchedDelete = (id, heroes) => {
+    return {
+        id: id,
+        type: 'HEROES_FETCHED',
+        payload: heroes
+    }
+}
 
 export const heroesFetchingError = () => {
     return {
